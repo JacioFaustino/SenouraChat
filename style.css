@@ -4,10 +4,10 @@ body {
 }
 
 .main-container {
-  display: flex;
+  display: flex; 
   height: 100vh;
 }
-
+ 
 .left {
   width: 45%;
   background: #0f172a;

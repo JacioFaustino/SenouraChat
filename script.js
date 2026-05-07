@@ -4,8 +4,8 @@ const usuarios = [
     {user: "maria", pass: "123"},
     {user: "ana", pass: "123"},
     {user: "carlos", pass: "123"}
-];
-
+]; 
+ 
 let usuarioAtual = "";
 
 let mensagens = [
