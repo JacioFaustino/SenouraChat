@@ -22,13 +22,30 @@ selection:bg-orange-400 selection:text-white">
 
         <div class="flex flex-col gap-2 mt-6">
 
-            <button id="fabricio" class="
-                flex items-center gap-3
-                p-3 rounded-2xl
-                hover:bg-gray-800
-                transition-all duration-200
-                w-full
-                ">
+            <button data-chat="papai" data-nome="Papai"
+            data-img="img/papai.jpeg"
+            class="chat-btn flex items-center gap-3 p-3 rounded-2xl
+            hover:bg-gray-800 transition-all duration-200 w-full">
+
+            <img
+                src="img/papai.jpeg" class="w-12 h-12 rounded-full
+                 object-cover">
+
+            <div class="flex flex-col items-start">
+                <h2 class="text-white font-semibold">
+                    Papai
+                </h2>
+
+                <p class="text-gray-400 text-sm">
+                    Online
+                </p>
+            </div>
+
+        </button>
+
+            <button data-chat="fabricio" data-nome="Fabricio" data-img="img/fabricio.png" 
+                class="chat-btn flex items-center gap-3 p-3 rounded-2xl
+                hover:bg-gray-800 transition-all duration-200 w-full">
                 <img
                     src="img/fabricio.png"
                     class="w-12 h-12 rounded-full object-cover"
@@ -44,8 +61,8 @@ selection:bg-orange-400 selection:text-white">
                 </div>
             </button>
 
-            <button id="agiota" class="
-                flex items-center gap-3
+            <button  data-chat="agiota" data-nome="Agiota" data-img="img/agiota.png"
+             class="chat-btn flex items-center gap-3
                 p-3 rounded-2xl
                 hover:bg-gray-800
                 transition-all duration-200
@@ -70,8 +87,8 @@ selection:bg-orange-400 selection:text-white">
             </button>
 
 
-        <button id="mateus" class="
-                flex items-center gap-3
+        <button  data-chat="mateus" data-nome="Mateus" data-img="img/mateus.png"
+             class="chat-btn flex items-center gap-3
                 p-3 rounded-2xl
                 hover:bg-gray-800
                 transition-all duration-200
@@ -96,8 +113,8 @@ selection:bg-orange-400 selection:text-white">
             </button>
 
 
-            <button id="amor" class="
-                flex items-center gap-3
+            <button  data-chat="amor" data-nome="Amor" data-img="img/mulher.png"
+             class="chat-btn flex items-center gap-3
                 p-3 rounded-2xl
                 hover:bg-gray-800
                 transition-all duration-200
@@ -137,23 +154,31 @@ selection:bg-orange-400 selection:text-white">
                     <h2 class="text-white font-semibold">
                         userious
                     </h2>
+                </div>
         </div>
     </aside>
 
     <div class="flex-1 flex flex-col p-4 gap-4">
         <header class="rounded-2xl bg-slate-700">
             <div class="flex items-center justify-between p-4">
+
                 <div class="flex items-center gap-3">
 
                     <img
+                        id="header_img"
                         src="img/papai.jpeg"
-                        alt="Logo"
-                        class="w-12 h-12 rounded-full">
-                    <h1 class="text-2xl font-bold text-white">
+                        class="w-12 h-12 rounded-full object-cover">
+
+                    <h1
+                        id="header_nome"
+                        class="text-2xl font-bold text-white">
                         Papai
                     </h1>
+
                 </div>
+
                 <div class="flex items-center gap-2">
+
                     <button id="btn_senoura" class="
                         bg-slate-600 hover:bg-slate-500
                         p-3 rounded-xl
@@ -169,28 +194,19 @@ selection:bg-orange-400 selection:text-white">
                     ">
                         ⋮
                     </button>
+
                 </div>
             </div>
         </header>
 
         <main class="flex flex-col flex-1 overflow-hidden p-3 pr-1 gap-4">
+            
 
             <div id="chat" class="flex-1 flex flex-col gap-2
-                overflow-y-auto pr-2
-                [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-                <div class="w-full flex">
-                    <div class="bg-white px-4 py-2 rounded-2xl">
-                        Fala, desgraça
-                    </div>
-                </div>
-                
-                <div class="w-full flex justify-end selection:bg-orange-200">
-                    <div class="bg-orange-400 self-end px-4 py-2 rounded-2xl text-white">
-                        tudo bem?
-                    </div>
-                </div>
-
+            overflow-y-auto pr-2
+            [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             </div>
+
             <div class="flex gap-2">
                 <textarea name="" id="txt_area" class="flex-1 bg-gray-800 
                 rounded-2xl placeholder:text-gray-300 border border-gray-200 
