@@ -29,6 +29,14 @@ const chatsPadrao = {
             texto: "Bora jogar mais tarde?"
         },
         {
+            tipo: "recebida",
+            texto: "umas 14 e pouco"
+        },
+        {
+            tipo: "recebida",
+            texto: "sipa"
+        },
+        {
             tipo: "enviada",
             texto: "Bora"
         }
@@ -41,7 +49,11 @@ const chatsPadrao = {
         },
         {
             tipo: "enviada",
-            texto: "Semana que vem eu pago"
+            texto: "Semana que vem eu pago, mano"
+        },
+        {
+            tipo: "recebida",
+            texto: "Semana que vem eu vou na sua casa, irmão"
         }
     ],
 
@@ -52,7 +64,11 @@ const chatsPadrao = {
         },
         {
             tipo: "enviada",
-            texto: "Ainda não"
+            texto: "vou ver, pow"
+        },
+        {
+            tipo: "enviada",
+            texto: "calmae"
         }
     ],
 
@@ -63,7 +79,7 @@ const chatsPadrao = {
         },
         {
             tipo: "enviada",
-            texto: "Boa noite meu amor"
+            texto: "Boa noite, meu amor"
         }
     ]
 };
