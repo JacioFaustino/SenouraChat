@@ -7,23 +7,22 @@
     <title>SenouraChat</title>
 </head>
 
-<body class="h-screen overflow-hidden flex bg-gray-800">
+<body class="h-screen overflow-hidden flex bg-gray-800
+selection:bg-orange-400 selection:text-white">
 
     <aside class="border-r border-gray-600 h-screen w-64 bg-gray-900 p-4 flex flex-col">
 
     
         <div class="flex flex-col items-center">
-            
             <h1 class="text-2xl font-bold text-white">
                 CONVERSAS
             </h1>
-
             <div class="w-36 h-1 bg-orange-400 rounded-full mt-2"></div>
         </div>
 
         <div class="flex flex-col gap-2 mt-6">
 
-            <button class="
+            <button id="fabricio" class="
                 flex items-center gap-3
                 p-3 rounded-2xl
                 hover:bg-gray-800
@@ -45,7 +44,7 @@
                 </div>
             </button>
 
-            <button class="
+            <button id="agiota" class="
                 flex items-center gap-3
                 p-3 rounded-2xl
                 hover:bg-gray-800
@@ -71,7 +70,7 @@
             </button>
 
 
-            <button class="
+        <button id="mateus" class="
                 flex items-center gap-3
                 p-3 rounded-2xl
                 hover:bg-gray-800
@@ -97,7 +96,7 @@
             </button>
 
 
-            <button class="
+            <button id="amor" class="
                 flex items-center gap-3
                 p-3 rounded-2xl
                 hover:bg-gray-800
@@ -185,7 +184,7 @@
                     </div>
                 </div>
                 
-                <div class="w-full flex justify-end">
+                <div class="w-full flex justify-end selection:bg-orange-200">
                     <div class="bg-orange-400 self-end px-4 py-2 rounded-2xl text-white">
                         tudo bem?
                     </div>
@@ -205,5 +204,6 @@
         </main>
     </div>
     <script src="chat.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
