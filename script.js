@@ -83,23 +83,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }, true);
     }
 });
-
-function mostrarMensagens() {
-    let area = document.getElementById("mensagens");
-    if (area) {
-        area.innerHTML = "";
-        for (let msg of mensagens) {
-            area.innerHTML += `<p>${msg}</p>`;
-        }
-    }
-}
-
-function enviar() {
-    let texto = document.getElementById("msg");
-    if (texto && texto.value !== "" && usuarioAtual) {
-        mensagens.push(usuarioAtual + ": " + texto.value);
-        texto.value = "";
-        mostrarMensagens();
-        
-    }
-}
