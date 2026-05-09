@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>SenouraChat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-  
+<header class="header-content">
+    <div class="header-left">
+        <h1>🥕 SenouraChat</h1>
+    </div>
+    
+    <nav>
+    <a href="index.html">Login</a>
+    <a href="devs.html">Desenvolvedores</a>
+    <a href="chat.html" class="requires-login">Chat</a> <!-- ← ADICIONE isso -->
+</nav>
+</header>
+
+<main class="login-container">
+
+    <!-- LOGIN -->
+
+    <section class="login-box">
+
+        <h2>Entrar</h2>
+
+        <form id="loginForm">
+
+            <input
+                type="text"
+                id="usuario"
+                placeholder="Usuário"
+                required
+            >
+
+            <input
+                type="password"
+                id="senha"
+                placeholder="Senha"
+                required
+            >
+
+            <button type="submit">
+                Entrar
+            </button>
+
+            <p id="mensagemErro"></p>
+
+        </form>
+
+    </section>
+
+    <!-- IMAGEM -->
+
+    <section class="image-box">
+
+        <img
+            src="senouraa.jpg"
+            alt="SenouraChat"
+        >
+
+    </section>
+
+</main>
+
+<footer>
+
+
+    <p>IFRN campus Santa Cruz</p>
+
+    <p>Trabalho de Programação para Internet</p>
+
+    <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
