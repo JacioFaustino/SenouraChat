@@ -6,9 +6,6 @@ const usuarios = [
     {user: "carlos", pass: "123"}
 ];
 
-let usuarioAtual = "";
-let mensagens = ["Maria: Oi turma!", "João: Tudo certo por aqui."];
-
 function estaLogado() {
     return localStorage.getItem('usuarioLogado') !== null;
 }
