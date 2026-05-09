@@ -7,25 +7,19 @@ const usuarios = [
 ];
 
 let usuarioAtual = "";
-let mensagens = [
-    "Maria: Oi turma!",
-    "João: Tudo certo por aqui."
-];
+let mensagens = ["Maria: Oi turma!", "João: Tudo certo por aqui."];
 
-// VERIFICA SE USUÁRIO ESTÁ LOGADO
 function estaLogado() {
     return localStorage.getItem('usuarioLogado') !== null;
 }
 
-// FAZ O LOGIN
 function fazerLogin(user, pass) {
     let valido = usuarios.find(u => u.user === user && u.pass === pass);
-    
     if (valido) {
         usuarioAtual = user;
-        localStorage.setItem('usuarioLogado', user); // SALVA NO NAVEGADOR
+        localStorage.setItem('usuarioLogado', user);
         document.getElementById("mensagemErro").innerText = "";
-        window.location.href = "chat.html"; // REDIRECIONA PARA CHAT
+        window.location.href = "chat.html";
         return true;
     } else {
         document.getElementById("mensagemErro").innerText = "❌ Usuário ou senha inválidos!";
@@ -33,51 +27,63 @@ function fazerLogin(user, pass) {
     }
 }
 
-// PROCESSA FORM DE LOGIN
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('loginForm');
+function mostrarAlertaLogin() {
+    const alertasAntigos = document.querySelectorAll('.login-alert');
+    alertasAntigos.forEach(alerta => alerta.remove());
     
+    const alert = document.createElement('div');
+    alert.className = 'login-alert';
+    alert.innerHTML = `🔐 Faça o login primeiro! <button onclick="this.parentElement.remove()">×</button>`;
+    document.body.appendChild(alert);
+    
+    setTimeout(() => alert.classList.add('show'), 100);
+    setTimeout(() => {
+        if (alert.parentNode) {
+            alert.classList.remove('show');
+            setTimeout(() => alert.remove(), 400);
+        }
+    }, 4000);
+}
+
+// 🔧 EVENT LISTENER MAIS FORTE
+document.addEventListener('DOMContentLoaded', function() {
+    // Login form
+    const form = document.getElementById('loginForm');
     if (form) {
         form.addEventListener('submit', function(e) {
-            e.preventDefault(); // IMPEDIR RECARREGAMENTO DA PÁGINA
-            
+            e.preventDefault();
             let user = document.getElementById("usuario").value;
             let pass = document.getElementById("senha").value;
-            
             fazerLogin(user, pass);
         });
     }
 
-    // VERIFICA LINK DO CHAT
+    // ✅ BLOQUEIO TOTAL DO LINK CHAT
     const chatLink = document.querySelector('.requires-login');
     if (chatLink) {
+        // ATIVA EVENTOS MÚLTIPLOS
         chatLink.addEventListener('click', function(e) {
-            if (!estaLogado()) {
-                e.preventDefault();
-                
-                // MOSTRA AVISO
-                const alert = document.createElement('div');
-                alert.className = 'login-alert';
-                alert.innerHTML = `
-                    🔐 Faça o login primeiro!
-                    <button onclick="this.parentElement.remove()">×</button>
-                `;
-                document.body.appendChild(alert);
-                
-                setTimeout(() => alert.classList.add('show'), 100);
-                setTimeout(() => {
-                    if (alert.parentNode) {
-                        alert.classList.remove('show');
-                        setTimeout(() => alert.remove(), 400);
-                    }
-                }, 4000);
-            }
-            // SE LOGADO, DEIXA IR NORMALMENTE
-        });
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            mostrarAlertaLogin();
+            return false;
+        }, true); // CAPTURE PHASE
+        
+        chatLink.addEventListener('mousedown', function(e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            mostrarAlertaLogin();
+            return false;
+        }, true);
+        
+        chatLink.addEventListener('mouseup', function(e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            return false;
+        }, true);
     }
 });
 
-// FUNÇÕES DO CHAT (para chat.html)
 function mostrarMensagens() {
     let area = document.getElementById("mensagens");
     if (area) {
