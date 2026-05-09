@@ -6,22 +6,150 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>SenouraChat</title>
 </head>
+
 <body class="h-screen overflow-hidden flex bg-gray-800">
-    <aside class="border-r border-gray-600 h-screen w-64 bg-gray-900 p-4
-    flex flex-col items-center">
-        <h1 class="text-2xl font-bold text-white
-        ">CONVERSAS</h1>
-        <div class="w-36 h-1 bg-orange-400 rounded-full mt-2"></div>
+
+    <aside class="border-r border-gray-600 h-screen w-64 bg-gray-900 p-4 flex flex-col">
+
+    
+        <div class="flex flex-col items-center">
+            
+            <h1 class="text-2xl font-bold text-white">
+                CONVERSAS
+            </h1>
+
+            <div class="w-36 h-1 bg-orange-400 rounded-full mt-2"></div>
+        </div>
+
+        <div class="flex flex-col gap-2 mt-6">
+
+            <button class="
+                flex items-center gap-3
+                p-3 rounded-2xl
+                hover:bg-gray-800
+                transition-all duration-200
+                w-full
+                ">
+                <img
+                    src="img/fabricio.png"
+                    class="w-12 h-12 rounded-full object-cover"
+                >
+                <div class="flex flex-col items-start">
+                    <h2 class="text-white font-semibold">
+                        Fabricio
+                    </h2>
+
+                    <p class="text-gray-400 text-sm">
+                        Offline
+                    </p>
+                </div>
+            </button>
+
+            <button class="
+                flex items-center gap-3
+                p-3 rounded-2xl
+                hover:bg-gray-800
+                transition-all duration-200
+                w-full
+                ">
+
+                <img
+                    src="img/agiota.png"
+                    class="w-12 h-12 rounded-full object-cover"
+                >
+
+                <div class="flex flex-col items-start">
+                    <h2 class="text-white font-semibold">
+                        Agiota
+                    </h2>
+
+                    <p class="text-gray-400 text-sm">
+                        Online
+                    </p>
+                </div>
+
+            </button>
+
+
+            <button class="
+                flex items-center gap-3
+                p-3 rounded-2xl
+                hover:bg-gray-800
+                transition-all duration-200
+                w-full
+                ">
+
+                <img
+                    src="img/mateus.png"
+                    class="w-12 h-12 rounded-full object-cover"
+                >
+
+                <div class="flex flex-col items-start">
+                    <h2 class="text-white font-semibold">
+                        Mateus
+                    </h2>
+
+                    <p class="text-gray-400 text-sm">
+                        Visto há 2 min
+                    </p>
+                </div>
+
+            </button>
+
+
+            <button class="
+                flex items-center gap-3
+                p-3 rounded-2xl
+                hover:bg-gray-800
+                transition-all duration-200
+                w-full
+                ">
+
+                <img
+                    src="img/mulher.png" 
+                    class="w-12 h-12 rounded-full object-cover"
+                >
+
+                <div class="flex flex-col items-start">
+                    <h2 class="text-white font-semibold">
+                        Amor❤️
+                    </h2>
+
+                    <p class="text-gray-400 text-sm">
+                        Visto há 1 hora
+                    </p>
+                </div>
+
+            </button>
+
+        </div>
+        <div class="flex items-center gap-3
+                p-3 rounded-2xl
+                bg-slate-800
+                w-full
+                 mt-auto
+                ">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                    class="w-12 h-12 rounded-full object-cover"
+                >
+
+                <div class="flex flex-col items-start">
+                    <h2 class="text-white font-semibold">
+                        userious
+                    </h2>
+        </div>
     </aside>
+
     <div class="flex-1 flex flex-col p-4 gap-4">
         <header class="rounded-2xl bg-slate-700">
             <div class="flex items-center justify-between p-4">
                 <div class="flex items-center gap-3">
 
                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
+                        src="img/papai.jpeg"
                         alt="Logo"
-                        class="w-12 h-12">
+                        class="w-12 h-12 rounded-full">
                     <h1 class="text-2xl font-bold text-white">
                         Papai
                     </h1>
@@ -45,10 +173,12 @@
                 </div>
             </div>
         </header>
+
         <main class="flex flex-col flex-1 overflow-hidden p-3 pr-1 gap-4">
 
             <div id="chat" class="flex-1 flex flex-col gap-2
-             overflow-y-auto pr-2">
+                overflow-y-auto pr-2
+                [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                 <div class="w-full flex">
                     <div class="bg-white px-4 py-2 rounded-2xl">
                         Fala, desgraça

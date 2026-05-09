@@ -100,5 +100,6 @@ function enviar() {
         mensagens.push(usuarioAtual + ": " + texto.value);
         texto.value = "";
         mostrarMensagens();
+        
     }
 }

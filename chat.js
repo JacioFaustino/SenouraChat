@@ -73,3 +73,4 @@ btnSenoura.addEventListener("click", () => {
     location.reload();
 
 });
+
