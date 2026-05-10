@@ -120,11 +120,11 @@ amor: [
   },
   {
     tipo: "recebida",
-    texto: "Sou sua e vc é meu. De quem é esse bumbum que o papai gosta?"
+    texto: "Sou sua e vc é meu. De quem é esse pinguim que o papai gosta?"
   },
   {
     tipo: "enviada",
-    texto: "É seuuuu. Todo seu. Dá tapa pra eu aprender a ser uma pinguim obediente? 🐧🍑"
+    texto: "É seuuuu. Todo seu. Dá carão pra eu aprender a ser uma pinguim obediente? 🐧"
   },
   {
     tipo: "recebida",
