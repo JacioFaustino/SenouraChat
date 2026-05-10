@@ -85,16 +85,108 @@ const chatsPadrao = {
         }
     ],
 
-    amor: [
-        {
-            tipo: "recebida",
-            texto: "Boa noite ❤️"
-        },
-        {
-            tipo: "enviada",
-            texto: "Boa noite, meu amor"
-        }
-    ]
+amor: [
+  {
+    tipo: "recebida",
+    texto: "Tava vendo as fotos aqui... que saudade do meu nene :/"
+  },
+  {
+    tipo: "enviada",
+    texto: "Tbm to com sdd do meu dengo. O papai ja ja chega pra te dar muito beijinho de esquilo 🐿️🐿️"
+  },
+  {
+    tipo: "recebida",
+    texto: "Aiiii paraaaa kkkkk eu fico toda arrepiada quando vc faz o barulhinho do esquilo no meu pescoço!! nham nham nham"
+  },
+  {
+    tipo: "enviada",
+    texto: "Vou morder essa orelhinha até vc pedir arrego. Quem é a minha gatinha manhosa?"
+  },
+  {
+    tipo: "recebida",
+    texto: "Eu sou! Miau! 😻 o nene quer leitinho no colo hoje?"
+  },
+  {
+    tipo: "enviada",
+    texto: "Quero mtoooo. Mas tem q ser na boquinha e fazendo carinho na minha careca kkkkkk"
+  },
+  {
+    tipo: "recebida",
+    texto: "Faço sim meu reizinho. Vou até colocar aquela nossa fantasia de pinguim pra gente ficar balançando de um lado pro outro na cama kkkkkk imagina a cena"
+  },
+  {
+    tipo: "enviada",
+    texto: "Kkkkkkkkk a gente é mto bobo né. Meu pinguinho de mel."
+  },
+  {
+    tipo: "recebida",
+    texto: "Sou sua e vc é meu. De quem é esse pinguim que o papai gosta?"
+  },
+  {
+    tipo: "enviada",
+    texto: "É seuuuu. Todo seu. Dá carão pra eu aprender a ser uma pinguim obediente? 🐧"
+  },
+  {
+    tipo: "recebida",
+    texto: "Vou dar mtooo. Vou te encher de \"nhoc nhoc\" nas bochechas tbm."
+  },
+  {
+    tipo: "enviada",
+    texto: "Te amo meu totó. Au au! Faz o barulhinho de cachorro pro seu amor fazzz"
+  },
+  {
+    tipo: "recebida",
+    texto: "Uf uf! Auuuu! 🐶 dps vou lamber seu nariz todinho kkkkkk"
+  },
+  {
+    tipo: "enviada",
+    texto: "Oi. Vou passar no mercado agora."
+  },
+  {
+    tipo: "recebida",
+    texto: "Beleza. Traz papel higiênico e sabão em pó."
+  },
+  {
+    tipo: "enviada",
+    texto: "Qual marca? O de sempre?"
+  },
+  {
+    tipo: "recebida",
+    texto: "Sim. E vê se não esquece a carne pro jantar."
+  },
+  {
+    tipo: "enviada",
+    texto: "Ok, chego em 20 minutos. Beijos."
+  },
+ {
+    tipo: "recebida",
+    texto: "Ah, aproveita e vê se tem arroz também, acho que acabou."
+  },
+  {
+    tipo: "enviada",
+    texto: "Tá bom, vou olhar tudo lá. Se tiver promoção eu já pego mais."
+  },
+  {
+    tipo: "recebida",
+    texto: "Perfeito. Hoje vou fazer aquele almoço mais simples mesmo, tô meio cansada."
+  },
+  {
+    tipo: "enviada",
+    texto: "Tranquilo, amor. Quer que eu passe na farmácia também?"
+  },
+  {
+    tipo: "recebida",
+    texto: "Não precisa não. Só vem logo pra casa depois."
+  },
+  {
+    tipo: "enviada",
+    texto: "Pode deixar. Já tô indo, te aviso quando estiver chegando."
+  },
+  {
+    tipo: "recebida",
+    texto: "Tá bom. Dirige com cuidado."
+  }
+]
 };
 
 let chats =
